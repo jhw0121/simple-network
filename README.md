@@ -24,6 +24,11 @@
 -sudo ln -s usr/local/go/bin/go/usr/local/bin/go
 -nano ~/.profile 마지막 줄에 추가
 -export GOPATH=$HOME/go
--export PATH+$PATH:/usr/local/go/bin:$GOPATH/bin
+-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 -source ~/.profile
-
+-curl -sSl http://bit.ly/2ysbOFE | bash -s --1.4.7 1.4.7 0.4.21
+-vi ~/.profile 마지막 줄에 추가
+-export GOPATH=$HOME/go
+-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:~/fabric-samples/bin;
+-source ~/.profile
+-sudo apt-get install vin tree openssh-server
